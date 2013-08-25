@@ -22,3 +22,6 @@
 
 setsebool -P httpd_enable_homedirs true
 #chcon -R -t httpd_sys_content_t ~<username>/public_html  #Might not be necessary
+
+# Allow quagga/zebra to write configuration files
+setsebool zebra_write_config true
