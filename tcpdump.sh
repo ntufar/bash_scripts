@@ -9,3 +9,7 @@ tcpdump -i wlp2s0 -n ip and not port domain and not port http and not port https
 
 # Dump RIP requests
 tcpdump -i wlp2s0 -n -v -s0 udp and port 520
+
+# Dump OSPF 
+tcpdump -i wlp2s0 -n -v 'ip[9] == 89'
+tcpdump -i wlp2s0 -n -v ip proto ospf
