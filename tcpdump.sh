@@ -16,3 +16,6 @@ tcpdump -i wlp2s0 -n -v ip proto ospf
 
 # Dump bgp
 tcpdump -i wlp2s0 -n -v ip proto ospf
+
+# Dump all from a certain ip
+tcpdump -i wlp2s0 src 94.202.154.9 or dst 94.202.154.9
