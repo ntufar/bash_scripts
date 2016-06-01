@@ -10,7 +10,5 @@ dpkg --list | grep 'linux-headers' | awk '{ print $2 }' | sort -V | sed -n '/'"$
 #Clean old apt cache and packages
 #Ref: http://www.ubuntugeek.com/cleaning-up-a-ubuntu-gnulinux-system-updated-with-ubuntu-14-10-and-more-tools-added.html
 apt-get autoclean
-
 apt-get clean
-
 apt-get autoremove
